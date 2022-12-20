@@ -1,0 +1,1532 @@
+@media screen and (max-width: 1100px){
+    .container{
+      flex-direction: column;
+      position: absolute;
+      padding: 0;
+    }
+    .campo-menu{
+      width: 100%;
+      height: 15%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .menu-apps{
+      top: 0;
+      flex-direction: row;
+      padding: 15px;
+      height: 10%;
+    }
+    .menu-apps ul{
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .lista{
+      position: relative;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    } 
+    .lista a{
+      border-radius: 7px;
+    }
+    .lista a i{
+      font-size: 20px;
+      padding: 12px 14px;
+    }
+    .lista a:not(.ativo){
+      box-shadow: 2px 2px 5px var(--sombra), -2.5px -2.5px 5px var(--sombra-inativo);
+    }
+    .lista a:not(.ativo) i{
+      font-size: 21px;
+    }
+    .lista a.ativo{
+      box-shadow: inset 2.3px 2.3px 5px var(--sombra), inset -2px -2px 4px var(--sombra-inativo);
+    }
+    .campo-relogio{
+      width: 100%;
+      height: 15%;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0px 50px;
+    }
+    .campo-relogio .claro-escuro, .campo-relogio .casa{
+      width: 43px;
+      height: 43px;
+      box-shadow: 2.4px 2.4px 4.7px var(--sombra), -2.6px -2.6px 4.7px var(--sombra-inativo);
+    }
+    .claro-escuro i, .casa i{
+      font-size: 20px;
+    }
+    .balaoimg{
+      display: none;  
+    }
+    .coelho-md{
+      display: flex;
+      position: relative;
+      width: 70px;
+      height: 70px;
+      animation: andando 4s linear infinite;
+    }
+    .coelho-md img{
+      width: 100%;
+    }
+    @keyframes andando{
+    0%, 50%, 100%{
+        transform: translateX(0);
+    }
+    25%{
+      transform: translateX(-25px);
+    }
+    75%{
+      transform: translateX(25px);
+    }
+    }
+    .relogio { 
+      padding: 8px 4px;
+      width: 95px;
+      height: fit-content;
+      font-weight: normal;
+      border-radius: 8px;
+      box-shadow: 1px 3.5px 3.3px var(--sombra), 1px -3.5px 3.3px var(--sombra-ativo);
+    }
+    .escuro .relogio{
+      box-shadow: 1px 3.5px 3.3px var(--sombra-escura), 1px -3.5px 3.3px var(--sombra-ativo);
+  
+    }
+    .hms {
+      font-size: 20px;
+    }
+    .ampm {
+      font-size: 12px;
+    }
+    .data {
+      font-size: 12px;
+    }
+    .meio{
+      width: 100%;
+      height: 70%;
+      flex-direction: column;
+    }
+    .tela{
+      width: 80%;
+      height: 90%;
+      border-radius: 22px;
+      border: 16px solid var(--bg);
+      box-shadow: 4px 4px 6px var(--sombra), -4px -4px 6px var(--sombra-inativo), inset 3px 3px 6px var(--sombra), inset -3px -3px 6px var(--sombra-inativo);
+    }
+    
+    #home{
+      width: 90%;
+      gap: 40px;
+    }
+    #home .casinha{
+      width: 40%;
+    }
+    .casinha img{
+      width: 60%;
+      margin-bottom: 10px;
+    }
+    #home h2{
+      font-size: 23px;
+    }
+    #home p{
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    #sobre header h2{
+      font-size: 19px;
+    }
+    #sobre header h3{
+      font-size: 15px;
+    }
+    #sobre header p{
+      font-size: 13px;
+    }
+    #sobre header .tecnologias ul li a, #sobre header .midias ul li a{
+      font-size: 20px;
+    }
+    #sobre .perfil-info{
+      gap: 16px;
+    }
+    #sobre img{
+      width: 130px;
+      height: 130px;
+      border: 5px solid var(--segunda);
+    }
+    #musica{
+      width: 200px;
+      padding: 4px 14px;
+      border-radius: 14px;
+      box-shadow: 1px 3px 10px var(--segunda);
+    }
+    .topo-musica span{
+      font-size: 15.5px;
+    }
+    .img-musica{
+      height: 115px;
+      width: 35%;
+      border-radius: 12px;
+    }
+    .info-musica .nome{
+      font-size: 16px;
+    }
+    .info-musica .artista{
+      font-size: 13px;
+    }
+    .progresso-musica{
+      height: 4px;
+    }
+    .progresso-barra::before{
+      width: 10px;
+      height: 10px;
+    }
+    .tempo-musica span{
+      font-size: 10px;
+    }
+    .controle-musica{
+      margin: 30px 0 10px 0;
+    }
+    .controle-musica i{
+      font-size: 18px;
+    }
+    .controle-musica i:nth-child(2),
+    .controle-musica i:nth-child(4){
+    font-size: 25px;
+    }
+    .play-pause{
+      height: 36px;
+      width: 36px;
+    }
+    .play-pause::before{
+      height: 32px;
+      width: 32px;
+    }
+    .play-pause i{
+      height: 43px;
+      width: 43px;
+      font-size: 22px;
+    }
+    .lista-musica{
+      top: 25%;
+      padding: 10px 20px;
+    }
+    .lista-musica .header-musica .linha-musica{
+      font-size: 15px;
+    }
+    .linha-musica i{
+      font-size: 20px;
+    }
+    .header-musica #fechar{
+      font-size: 17px;
+    }
+    .lista-musica ul{
+      margin: 3px;
+      max-height: 200px;
+    }
+    .lista-musica ul li{
+      font-size: 12px;
+    }
+    .lista-musica ul li .linha-musica span{
+      font-size: 14px;
+    }
+    ul li .audio-duracao{
+      font-size: 13px;
+    }
+    #alarme {
+      width: 220px;
+      padding: 10px;
+      box-shadow: 0px 4px 12px var(--sombra-escura);
+    }
+    #alarme i {
+      font-size: 40px;
+    }
+    #alarme h1 {
+      font-size: 20px;
+      margin: 3px 0;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    .set-alarm-field input[type=number] {
+      padding: 12px;
+      margin: 0;
+    }
+    #upcoming-alarms-list {
+      padding: 0 15px;
+    }
+    #upcoming-alarms-list li {
+      font-size: 13.5px;
+    }
+    #todo {
+      width: 320px;
+      padding: 20px;
+      box-shadow: 2px 4px 13px var(--sombra);
+    }
+    .task-input{
+      height: 42px;
+    }
+    .task-input input{
+      font-size: 15px;
+      padding: 0 20px 0 43px;
+    }
+    .task-input i{
+      font-size: 18px;
+    }
+    .filters span{
+      font-size: 14.5px;
+      margin-right: 10px;
+    }
+    .controls .clear-btn{
+      font-size: 12px;
+      padding: 5px 13px;
+    }
+    .task-box{
+      margin-top: 5px;
+      font-size: 14px;
+    }
+    .task-box.overflow{
+      max-height: 180px;
+    }
+    .task-box .task{
+      font-size: 14px;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+    }
+    .task-menu li{
+      height: 20px;
+      padding: 14px 10px;
+    }
+    .calendar {
+      width: 250px;
+      border-radius: 20px;
+      padding: 5px;
+   }
+    .calendar-header {
+      font-size: 17px;
+      margin-top: 3px;
+    }
+    .calendar-week-day {
+      height: 25px;
+      font-size: 14px;
+    }
+    .calendar-days div {
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+    }
+    .month-picker {
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .year-change {
+      height: 30px;
+      width: 30px;
+      margin: 0 5px;
+    }
+    .month-list > div > div {
+      padding: 5px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    #calculadora {
+      width: 210px;
+      padding: 18px 10px;
+    }
+    .display input {
+      font-size: 20px;  
+    }
+    #calculadora .buttons {
+      grid-gap: 5px;
+      margin-top: 25px;
+    }
+    #calculadora .buttons input[type="button"] {
+      font-size: 15px;
+      padding: 10px;
+    }
+    #calculadora .buttons input[type="button"]:hover {
+      box-shadow: 1px 1px 4px var(--sombra-inativo), -1px -1px 4px var(--sombra-inativo);
+    }
+    .jogo-da-velha{
+      width: 200px;
+      height: 300px;
+    }
+    .wrapper h1{
+      padding-bottom: 10px;
+      font-size: 15px;
+    }
+    .container-jogo-velha {
+      gap: 7px;
+    }
+    .button-option {
+      height: 45px;
+      width: 45px;
+      font-size: 20px;
+    }
+    #restart {
+      font-size: 13px;
+    }
+    #new-game {
+      font-size: 15px;
+    }
+    #message {
+      font-size: 17px;
+    }
+    .jogo-memoria{
+      width: 200px;
+      height: 300px;
+    }
+    .wrapper-memoria{
+      padding: 5px;
+    }
+    .wrapper-memoria h1{
+      font-size: 15px;
+      margin: 0;
+    }
+    .cards{
+      margin-bottom: 0;
+    }
+    .cards .card{
+      height: 45px;
+      width: 45px;
+    }
+    @keyframes shake {
+      0%, 100%{
+        transform: translateX(0);
+      }
+      20%{
+        transform: translateX(-8px);
+      }
+      40%{
+        transform: translateX(8px);
+      }
+      60%{
+        transform: translateX(-5px);
+      }
+      80%{
+        transform: translateX(5px);
+      }
+    }
+    .card .back-view img{
+      max-width: 35px;
+    }
+    #galeria{
+      width: 90%;
+    }
+    .lightBox .lightBox_content{
+      padding: 15px 10px;
+      border-radius: 8px;
+      width: 80%;
+    }
+    .lightBox_content .close{
+      font-size: 25px;
+    }
+    #galeria .lightBox .showImg{
+      align-items: center;
+    }
+    .lightBox .showImg .image{
+      position: relative;
+      height: 90%;
+      width: 90%;
+    }
+    .image-gallery header{
+      font-size: 15px;
+      padding: 8px 15px;
+    }
+    .image-gallery .image-container{
+      margin-top: 15px;
+      gap: 10px;
+      width: 95%;
+      height: 95%;
+    }  
+  }
+  
+  @media screen and (max-width: 650px) {
+    .container{
+      flex-direction: column;
+      background-color: var(--bg);
+      position: absolute;
+      padding: 0;
+      justify-content: space-around;
+      gap: 0;
+    }
+    
+    .campo-menu{
+      width: 100%;
+      height: 10%;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      top: 88%;
+  }
+    .menu-apps{
+      flex-direction: row;
+      padding: 15px;
+      z-index: 1;
+    }
+    .menu-apps ul{
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+    }
+  
+    .lista a{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      width: 35px;
+      height: 35px;
+    } 
+    .lista a i{
+      font-size: 15px;
+    }
+    .lista a:not(.ativo) i{
+      font-size: 16px;
+    }
+    .lista a:not(.ativo){
+      box-shadow: 1.8px 1.8px 3px var(--sombra), -1.8px -1.8px 3px var(--sombra-inativo);
+    }
+    .lista a.ativo{
+      box-shadow: inset 2px 2px 4.5px var(--sombra), inset -2px -2px 3.6px var(--sombra-inativo);
+    }
+    
+    .campo-relogio{
+      width: 100%;
+      height: 8%;
+      flex-direction: row;
+      position: absolute;
+      justify-content: space-between;
+      padding: 0px 5%;
+      top: 0;
+      left: 0;
+      padding-top: 15px;
+    }
+   
+    .campo-relogio img{
+      width: 50px;
+    }
+    .btns{
+      flex-direction: row;
+    }
+  
+    .btns .claro-escuro, .btns .casa {
+      width: 30px;
+      height: 30px;
+      box-shadow: 2px 2px 3.7px var(--sombra), -2px -2px 3.7px var(--sombra-inativo);
+    }
+  
+    .claro-escuro i, .casa i{
+      font-size: 14px;
+    }
+    .relogio { 
+      padding: 3px 6px;
+      width: fit-content;
+      height: fit-content;
+      font-weight: normal;
+      border-radius: 5px;
+      box-shadow: 0.5px 2px 2.4px var(--sombra), 0.5px -2px 3px var(--sombra-ativo);
+    }
+  
+    .escuro .relogio{
+      box-shadow: 0.5px 2px 2.4px var(--sombra-escura), 0.5px -2px 3px var(--sombra-ativo);
+    }
+  
+    .hms {
+      font-size: 14px;
+    }
+    .ampm {
+      font-size: 10px;
+    }
+    .data {
+      font-size: 10px;
+      font-weight: 400;
+    }
+  
+    .meio{
+      width: 100%;
+      height: 80%;
+      flex-direction: column;
+      top: 8%;
+      position: absolute;
+      padding-top: 8px;
+    }
+    .tela{
+      width: 80%;
+      height: 90%;
+      border: 14px solid var(--bg);
+      box-shadow: 3px 3px 5px var(--sombra), -3px -3px 5px var(--sombra-inativo), inset 3px 3px 5px var(--sombra), inset -3px -3px 5px var(--sombra-inativo);
+      border-radius: 18px;
+    }
+  
+    .coelho-md{
+      display: none;
+    }
+
+    .minicoelho{
+      display: block;
+    }
+  
+    #home{
+      width: 90%;
+      gap: 20px;
+    }
+    
+    #home .casinha{
+      width: 40%;
+      height: fit-content;
+      gap: 20px;
+    }
+    
+    .casinha img{
+      width: 65%;
+      margin-bottom: 15px;
+    }
+  
+    #home h2{
+      font-size: 18px;
+      width: 100%;
+      text-align: center;
+    }
+    .home-msg{
+      width: 80%;
+    }
+    
+    #home p{
+      font-size: 11px;
+    }
+  
+    #sobre header{
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    #sobre header .tecnologias ul, #sobre header .midias ul{
+      flex-direction: row;
+    }
+  
+    #sobre header ion-icon{
+      font-size: 16px;
+    }
+  
+    #sobre header h2{
+      font-size: 14px;
+    }
+    
+    #sobre header h3{
+      font-size: 11.5px;
+    }
+  
+    #sobre header p{
+      font-size: 12px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    #sobre .midias a:hover{
+      color: var(--principal);
+    }
+    
+    #sobre .perfil-info{
+      gap: 16px;
+    }
+    
+    #sobre img{
+      width: 120px;
+      height: 120px;
+      border: 5px solid var(--segunda);
+    }
+  
+    #musica{
+      width: 180px;
+      padding: 2px 10px;
+      box-shadow: 0px 3px 10px var(--segunda);
+    }
+    .topo-musica span{
+      font-size: 15px;
+      color: var(--principal);
+      margin-top: 0;
+    }
+    .img-musica{
+      height: 100px;
+      width: 38%;
+    }
+    .info-musica .nome{
+      font-size: 15px;
+    }
+    .info-musica .artista{
+      font-size: 13px;
+    }
+    .progresso-musica{
+      height: 4px;
+    }
+    .progresso-barra::before{
+      width: 10px;
+      height: 10px;
+    }
+    .tempo-musica span{
+      font-size: 11px;
+    }
+    .controle-musica{
+      margin: 30px 0 10px 0;
+    }
+    .controle-musica i{
+      font-size: 18px;
+    }
+    .controle-musica i:nth-child(2),
+    .controle-musica i:nth-child(4){
+    font-size: 25px;
+    }
+    .play-pause{
+      height: 36px;
+      width: 36px;
+    }
+    .play-pause::before{
+      height: 32px;
+      width: 32px;
+    }
+    .play-pause i{
+      height: 43px;
+      width: 43px;
+      font-size: 22px;
+    }
+    .lista-musica{
+      top: 25%;
+      padding: 10px;
+    }
+    .lista-musica .header-musica .linha-musica{
+      font-size: 14px;
+    }
+    .header-musica #fechar{
+      font-size: 18px;
+    }
+    .lista-musica ul{
+      margin: 3px;
+      max-height: 180px;
+    }
+    .lista-musica ul li{
+      font-size: 11.5px;
+    }
+    .lista-musica ul li .linha-musica span{
+      font-size: 13px;
+    }
+    ul li .audio-duracao{
+      font-size: 12px;
+    }
+  
+    #alarme {
+      width: 190px;
+    }
+    #alarme i {
+      font-size: 32px;
+    }
+    #alarme h1 {
+      font-size: 17px;
+    }
+    #alarme h3, #alarme input{
+      font-size: 12px;
+    }
+    .set-alarm-field input[type=number] {
+      padding: 10px;
+    }
+    #alarme .buttons button {
+      width: 50%;
+      font-size: 10px;
+      padding: 0 2px;
+    }
+    #upcoming-alarms-list {
+      list-style: none;
+      padding: 0 20px;
+    }
+    #upcoming-alarms-list li {
+      font-size: 13px;
+    }
+    #alarme .deleteAlarm{
+      background-color: transparent;
+      color: var(--segunda);
+      padding: 0;
+      font-size: 12px;
+    }
+  
+    #todo {
+      width: 245px;
+      padding: 10px;
+    }
+    .task-input{
+      height: 32px;
+    }
+    .task-input input{
+      font-size: 13px;
+    }
+    .task-input i{
+      font-size: 15px;
+    }
+    .filters span{
+      font-size: 12px;
+      margin-right: 10px;
+    }
+    .controls .clear-btn{
+      font-size: 11px;
+      padding: 5px;
+    }
+    .task-box{
+      margin-top: 5px;
+      font-size: 12px;
+    }
+    .task-box.overflow{
+      max-height: 120px;
+    }
+    .task-box .task{
+      font-size: 12px;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+    }
+  
+    .calendar {
+      height: 250px;
+      width: 220px;
+      padding: 5px;
+   }
+    .calendar-header {
+      font-size: 16px;
+      padding: 5px;
+      width: 100%;
+    }
+    .calendar-week-day {
+      height: 25px;
+      font-size: 14px;
+    }
+    .calendar-days {
+      gap: 2px;
+    }
+    .calendar-days div {
+      width: 25px;
+      height: 25px;
+      font-size: 14px;
+    }
+    .month-picker {
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .year-change {
+      height: 30px;
+      width: 30px;
+      margin: 0 5px;
+    }
+    .month-list > div > div {
+      padding: 5px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+  
+    #calculadora {
+      width: 180px;
+      height: 280px;
+      padding: 18px 10px 15px 10px;
+    }
+    .display input {
+      font-size: 16px;  
+    }
+    #calculadora .buttons {
+      grid-gap: 5px;
+      margin-top: 25px;
+    }
+    #calculadora .buttons input[type="button"] {
+      font-size: 13px;
+      padding: 9px;
+    }
+  
+    #jogos{
+      height: 50%;
+      display: none;
+      gap: 15px;
+    }
+    
+    #jogos .jogo-da-velha{
+      width: 120px;
+      height: 190px;
+    }
+    .wrapper h1{
+      padding-bottom: 10px;
+      font-size: 12px;
+    }
+    .container-jogo-velha {
+      gap: 6px;
+    }
+    .button-option {
+      height: 25px;
+      width: 25px;
+      font-size: 13px;
+      border-radius: 4px;
+    }
+    #restart {
+      font-size: 10px;
+      padding: 0px;
+      width: 70%;
+      margin-top: 15px;
+      text-align: center;
+    }
+    #new-game {
+      font-size: 10px;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    #message {
+      font-size: 13px;
+    }
+    
+    .jogo-memoria{
+      width: 120px;
+      height: 190px;
+    }
+  
+    .wrapper-memoria h1{
+      font-size: 12px;
+      margin: -8px 0 5px 0;
+      text-align: center;
+    }
+    .cards{
+      height: 60%;
+      width: 90%;
+      margin-bottom: 0px;
+      gap: 2px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .cards .card{
+      height: 25px;
+      width: 25px;
+      border-radius: 2px;
+    }
+    .card .front-view img{
+      width: 15px;
+    }
+    @keyframes shake {
+      0%, 100%{
+        transform: translateX(0);
+      }
+      20%{
+        transform: translateX(-7px);
+      }
+      40%{
+        transform: translateX(7px);
+      }
+      60%{
+        transform: translateX(-4px);
+      }
+      80%{
+        transform: translateX(4px);
+      }
+    }
+    .card .back-view img{
+      max-width: 20px;
+    } 
+  
+    #galeria{
+      width: 90%;
+      margin: 0;
+      padding: 6px;
+    }
+   
+    #galeria .image-gallery{
+      height: 100%;
+      padding: 0;
+      gap: 8px;
+    }
+    .image-gallery .image-container{
+      width: 100%;
+      height: fit-content;
+      gap: 8px;
+    }
+    .image-gallery header{
+      padding: 8px;
+      font-size: 11px;
+    }
+    .image-gallery .image-box{
+      margin: 0;
+      width: 25%;
+    }
+
+    .image-container img{
+      width: 100%;
+      box-shadow: 0 5px 10px var(--bg);
+      border-radius: 2px;
+      position: relative;
+    }
+    
+    #galeria .lightBox{
+      height: 90%;
+      width: 90%;
+      margin: 0 10px;
+    }
+    .lightBox .lightBox_content{
+      width: 65%;
+      height: fit-content;
+      left: 50%;
+      padding: 10px 35px;
+    }
+    .lightBox_content .close{
+      font-size: 25px;
+      padding: 3px;
+    }
+    #galeria .lightBox .showImg{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
+    .lightBox .showImg .image{
+      position: relative;
+      height: 90%;
+      width: 90%;
+    }
+    .showImg .image img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .image-gallery header{
+      font-size: 12px;
+      padding: 8px 12px;
+      margin-bottom: 5px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+  
+    .container{
+      justify-content: center;
+    }
+    .campo-relogio img{
+      width: 50px;
+    }
+  
+    .btns{
+      gap: 15px;
+    }
+   
+    .btns .claro-escuro, .btns .casa {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .claro-escuro i, .casa i{
+      font-size: 12px;
+    }
+  
+    .relogio { 
+      padding: 3px 6px;
+      width: fit-content;
+      height: fit-content;
+      font-weight: normal;
+      border-radius: 5px;
+      box-shadow: 0.5px 2px 2.4px var(--sombra), 0.5px -2px 3px var(--sombra-ativo);
+    }
+  
+    .escuro .relogio{
+      box-shadow: 0.5px 2px 2.4px var(--sombra-escura), 0.5px -2px 3px var(--sombra-ativo);
+    }
+  
+    .hms {
+      font-size: 11px;
+    }
+    .ampm {
+      font-size: 8px;
+    }
+    .data {
+      font-size: 8px;
+    }
+  
+    .campo-menu{
+      width: 100%;
+      height: 10%;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      top: 88%;
+      margin: auto;
+  }
+    .menu-apps{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      z-index: 1;
+      width: 100%;
+    }
+    .menu-apps ul{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      width: fit-content;
+      width: 90%;
+    }
+  
+    .lista a{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      width: 25px;
+      height: 25px;
+    } 
+    .lista a i{
+      font-size: 11px;
+    }
+    .lista a:not(.ativo) i{
+      font-size: 12px;
+    }
+    .lista a:not(.ativo){
+      box-shadow: 1.8px 1.8px 3px var(--sombra), -1.8px -1.8px 3px var(--sombra-inativo);
+    }
+    .lista a.ativo{
+      box-shadow: inset 1.8px 1.8px 3.5px var(--sombra), inset -1.8px -1.8px 3px var(--sombra-inativo);
+    }
+    
+    .tela{
+      border: none;
+      margin-top: -15px;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  
+    #home .home-msg{
+      font-size: 14px;
+      width: 100%;
+    }
+    .casinha img{
+      width: 80%;
+    }
+    #home p {
+      font-size: 10px;
+    }
+  
+    #sobre header p {
+      font-size: 10px;
+    }
+    #sobre header h3{
+      font-size: 10px;
+      margin: 0;
+    }
+  
+    #sobre header h2{
+      font-size: 13px;
+    }
+  
+    #sobre header .tecnologias ul li a ion-icon, #sobre header .midias ul li a ion-icon {
+      font-size: 12px;
+    }
+  
+    #sobre .perfil-info{
+      gap: 12px;
+    }
+  
+    #sobre header img {
+      width: 80px;
+      height: 80px;
+      border: 4px solid var(--segunda);
+    }
+  
+    #musica{
+      width: 160px;
+      height: 260px;
+    }
+  
+    .topo-musica span{
+      font-size: 12px;
+    }
+    .img-musica{
+      height: 100px;
+      width: 33%;
+    }
+    .img-musica img{
+      height: 100%;
+      width: 100%;
+    }
+    .info-musica .nome{
+      font-size: 12.5px;
+    }
+    .info-musica .artista{
+      font-size: 11px;
+    }
+    .progresso-musica{
+      height: 3px;
+    }
+    .progresso-barra::before{
+      width: 8px;
+      height: 8px;
+    }
+    .tempo-musica span{
+      font-size: 9px;
+    }
+    .controle-musica{
+      margin: 30px 0 10px 0;
+    }
+    .controle-musica i{
+      font-size: 15px;
+    }
+    .controle-musica i:nth-child(2),
+    .controle-musica i:nth-child(4){
+    font-size: 20px;
+    }
+    .play-pause{
+      height: 33px;
+      width: 33px;
+    }
+    .play-pause::before{
+      height: 29px;
+      width: 29px;
+    }
+    .play-pause i{
+      height: 40px;
+      width: 40px;
+      font-size: 21px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: inherit;
+      background: inherit;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .lista-musica{
+      top: 25%;
+      width: 100%;
+      padding: 10px;
+    }
+    .lista-musica .header-musica .linha-musica{
+      font-size: 12px;
+    }
+    .header-musica #fechar{
+      font-size: 15px;
+    }
+    .lista-musica ul{
+      margin: 3px;
+      max-height: 140px;
+    }
+    .lista-musica ul li{
+      font-size: 11px;
+    }
+    .lista-musica ul li .linha-musica span{
+      font-size: 12px;
+    }
+    ul li .audio-duracao{
+      font-size: 11px;
+    }
+  
+    #alarme {
+      width: 160px;
+      background-color: var(--bg-tela);
+    }
+    #alarme i {
+      font-size: 28px;
+    }
+    #alarme h1 {
+      font-size: 16px;
+    }
+    #alarme h3, #alarme input{
+      font-size: 11px;
+    }
+    .set-alarm-field input[type=number] {
+      width: 30%;
+      padding: 8px;
+    }
+    #alarme .buttons button {
+      width: fit-content;
+      height: fit-content;
+      font-size: 8px;
+      padding: 10px 5px;
+    }
+    #upcoming-alarms-list {
+      padding: 0 10px;
+    }
+    #upcoming-alarms-list li {
+      font-size: 11px;
+      width: 100%;
+      margin: 5px 0;
+    }
+    #alarme .deleteAlarm{
+      font-size: 11px;
+    }
+  
+    #todo {
+      width: 210px;
+      padding: 10px 15px;
+      background-color: var(--bg-tela);
+    }
+    .task-input{
+      height: 30px;
+    }
+    .task-input input{
+      height: 100%;
+      width: 100%;
+      font-size: 12px;
+      padding: 0 20px 0 43px;
+    }
+    .task-input i{
+      font-size: 14px;
+    }
+    .controls{
+      padding: 18px 15px;
+    }
+    .filters span{
+      font-size: 11px;
+      margin-right: 7px;
+    }
+    .controls .clear-btn{
+      font-size: 9px;
+      padding: 5px;
+    }
+    .task-box{
+      margin-top: 5px;
+      margin-right: 5px;
+      padding: 0 20px 10px 25px;
+      color: var(--principal);
+      font-size: 11px;
+    }
+    .task-box.overflow{
+      max-height: 90px;
+    }
+    .task-box .task{
+      font-size: 11px;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+    }
+  
+    .task-box label input{
+      width: 9px;
+      margin-top: 0;
+    }
+  
+    .task-menu{
+      width: fit-content;
+      height: fit-content;
+    }
+    .task-menu li{
+      font-size: 10px;
+    }
+  
+    .calendar {
+      height: 200px;
+      width: 180px;
+      border-radius: 15px;
+      padding: 5px;
+   }
+    .calendar-header {
+      font-size: 12px;
+      padding: 5px;
+      width: 100%;
+    }
+    .calendar-week-day {
+      height: 15px;
+      font-size: 11px;
+    }
+    .calendar-days {
+      gap: 2px;
+    }
+    .calendar-days div {
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      font-size: 11px;
+    }
+    .month-picker {
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .year-change {
+      height: 20px;
+      width: 20px;
+      margin: 0 5px;
+    }
+    .month-list > div > div {
+      padding: 5px;
+      border-radius: 8px;
+      font-size: 11px;
+    }
+  
+    #calculadora {
+      width: 150px;
+      height: 230px;
+      padding: 10px;
+    }
+    .display input {
+      padding: 8px;
+      font-size: 14px;  
+    }
+    #calculadora .buttons {
+      grid-gap: 5px;
+      margin-top: 25px;
+    }
+    #calculadora .buttons input[type="button"] {
+      font-size: 11px;
+      padding: 7px;
+    }
+  
+    #jogos{
+      gap: 6px;
+    }
+    
+    #jogos .jogo-da-velha{
+      width: 110px;
+      height: 160px;
+    }
+    .wrapper h1{
+      padding-bottom: 10px;
+      font-size: 10px;
+    }
+    .container-jogo-velha {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+    }
+    #restart {
+      font-size: 8px;
+      padding: 0px;
+      width: 70%;
+      margin-top: 15px;
+      text-align: center;
+    }
+    #new-game {
+      font-size: 10px;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    #message {
+      text-align: center;
+      font-size: 10px;
+    }
+    
+    .jogo-memoria{
+      width: 110px;
+      height: 160px;
+    }
+  
+    .wrapper-memoria h1{
+      font-size: 10px;
+      margin: -8px 0 5px 0;
+      text-align: center;
+    }
+    .cards{
+      height: 60%;
+      width: 90%;
+      margin-bottom: 0px;
+      gap: 2px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .cards .card{
+      height: 23px;
+      width: 23px;
+      border-radius: 2px;
+    }
+    .card .front-view img{
+      width: 13px;
+    }
+    @keyframes shake {
+      0%, 100%{
+        transform: translateX(0);
+      }
+      20%{
+        transform: translateX(-4px);
+      }
+      40%{
+        transform: translateX(4px);
+      }
+      60%{
+        transform: translateX(-2px);
+      }
+      80%{
+        transform: translateX(2px);
+      }
+    }
+    .card .back-view img{
+      max-width: 18px;
+    }
+  
+    #galeria .image-gallery{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      gap: 8px;
+    }
+    .image-gallery .image-container{
+      width: 90%;
+      height: fit-content;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+    .image-gallery header{
+      padding: 5px;
+      font-size: 10px;
+      border: 1.5px solid var(--principal);
+    }
+    .image-gallery .image-box{
+      width: fit-content;
+      margin: 0;
+      width: 100%;
+    }
+    .image-box img{
+      width: 100%;
+    }
+    #galeria .lightBox{
+      height: 90%;
+      width: 90%;
+      margin: 0 10px;
+    }
+    .lightBox .lightBox_content{
+      width: 75%;
+      height: fit-content;
+      left: 50%;
+      padding: 10px 15px;
+    }
+    .lightBox_content .close{
+      font-size: 20px;
+      padding: 3px;
+    }
+    #galeria .lightBox .showImg{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+    }
+    .lightBox .showImg .image{
+      position: relative;
+      height: 90%;
+      width: 90%;
+    }
+    .showImg .image img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .image-gallery header{
+      font-size: 12px;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+    }
+  }

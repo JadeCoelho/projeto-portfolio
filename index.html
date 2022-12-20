@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jade Mattos</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   
+</head>
+<body onload="relogio()" class="claro">
+
+    <div class="container">
+        <div class="campo-menu">
+            <nav class="menu-apps">
+                <ul>
+                    <li class="lista">
+                        <a href="#" class="aIcone sobre" >
+                            <span class="icone sobre"><i class="material-icons">people_alt</i></span>
+                            <span class="titulo">sobre</span>
+                        </a>
+                    </li>
+                    <li class="lista">
+                        <a href="#" class="aIcone">
+                            <span class="icone musica"><i class="material-icons">library_music</i></span>
+                            <span class="titulo">música</span>
+                        </a>
+                    </li>
+                    <li class="lista">
+                        <a href="#" class="aIcone">
+                            <span class="icone alarme"><i class="material-icons">access_alarms</i></span>
+                            <span class="titulo">alarme</span>
+                        </a>
+                    </li>
+                    <li class="lista">
+                        <a href="#" class="aIcone">
+                            <span class="icone todo"><i class="material-icons">checklist_rtl</i></span>
+                            <span class="titulo">todo</span>
+                        </a>
+                    </li>
+                    <li class="lista">
+                        <a href="#" class="aIcone">
+                            <span class="icone calendario"><i class="material-icons">calendar_month</i></span>
+                            <span class="titulo">calendário</span>
+                        </a>
+                    </li>
+                    <li class="lista">
+                        <a href="#" class="aIcone">
+                            <span class="icone calculadora"><i class="material-icons">calculate</i></span>
+                            <span class="titulo">calculadora</span>
+                        </a>
+                    </li>
+                    <li class="lista">
+                        <a href="#" class="aIcone">
+                            <span class="icone jogos"><i class="material-icons">casino</i></span>
+                            <span class="titulo">jogos</span>
+                        </a>
+                    </li>
+                    <li class="lista">
+                        <a href="#" class="aIcone">
+                            <span class="icone galeria"><i class="material-icons">photo_library</i></span>
+                            <span class="titulo">galeria</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="meio">
+            <section class="tela">
+                <section id="home">
+                    <div class="casinha">
+                        <h2 class="home-msg"></h2>
+                        <img src="" alt="">
+                    </div>
+                    <p>Projeto pessoal criado com objetivo de servir como portfolio</p>
+                </section>
+                
+                <section id="sobre">
+                    <header>
+                        <div class="tecnologias">
+                            <ul>
+                                <li><a href=""><ion-icon name="logo-html5"></ion-icon></a></li>
+                                <li><a href=""><ion-icon name="logo-css3"></ion-icon></a></li>
+                                <li><a href=""><ion-icon name="logo-javascript"></ion-icon></a></li>
+                                <li><a href=""><ion-icon name="logo-angular"></ion-icon></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="perfil-info">
+                            <div class="minha-img"><img src="imgs/eu.jpeg" alt=""></div>
+                            <h2 class="nome">Jade Mattos Faria <span>C</span><span>o</span><span>e</span><span>l</span><span>h</span><span>o</span></h2>
+                            <h3>Desenvolvedora front-end iniciante</h3>
+                            <p>Rio de Janeiro | jademfcoelho@gmail.com</p>
+                        </div>
+
+                        <div class="midias">
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/jade-mattos-b3426b234/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                                <li><a href="https://github.com/JadeCoelho" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                                <li><a href="https://www.instagram.com/jadra.wings/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                <li><a href="https://api.whatsapp.com/send?phone=5521975811821" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                            </ul>
+                        </div>
+                    </header>                    
+                </section>
+
+                <section id="musica">
+                    <div class="topo-musica">
+                        <span>Tocando agora</span>
+                    </div>
+
+                    <div class="img-musica">
+                        <img src="" alt="">
+                    </div>
+                    <div class="info-musica">
+                        <p class="nome"></p>
+                        <p class="artista"></p>
+                    </div>
+
+                    <div class="progresso-musica">
+                        <div class="progresso-barra">
+                            <audio src="" id="audio-principal"></audio>
+                        </div>
+                        <div class="tempo-musica">
+                            <span class="atual">0:00</span>
+                            <span class="final">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="controle-musica">
+                        <i id="repetir" class="material-icons" title="Playlist em loop">repeat</i>
+                        <i id="anterior" class="material-icons">skip_previous</i>
+                        <div class="play-pause">
+                            <i class="material-icons tocar">play_arrow</i>
+                        </div>
+                        <i id="proxima" class="material-icons">skip_next</i>
+                        <i id="mais-musica" class="material-icons">queue_music</i>
+                    </div>
+
+                    <div class="lista-musica">
+                        <div class="header-musica">
+                            <div class="linha-musica">
+                                <i class= "list material-icons">queue_music</i>
+                                <span>Playlist</span>
+                            </div>
+                            <i id="fechar" class="material-icons">close</i>
+                        </div>
+
+                        <ul></ul>
+                    </div>
+                </section>
+
+                <section id="alarme">
+                    <i class= "list material-icons">alarm</i>
+                    <h1></h1>
+                    <form class="setAlarm">
+                        <div class="set-alarm-field">
+                            <input type="number" name="hr" placeholder="H" max="23" min="00">
+                            <input type="number" name="min" placeholder="M" max="59" min="00">
+                            <input type="number" name="sec" placeholder="S" max="59" min="00">
+                        </div>
+                
+                        <div class="buttons">
+                            <button type="submit" class="set-alarm">Criar alarme</button>
+                            <button type="reset" onclick="stopAlarm()" class="clear-alarm">Parar alarme</button>
+                        </div>
+                    </form>
+                    <h3 style="margin: 20px 0;">Alarmes criados:</h3>
+                    <div id="upcoming-alarms">
+                        <ul id="upcoming-alarms-list"></ul>
+                    </div>
+                </section>
+
+                <section id="todo">
+                    <div class="task-input">
+                        <i class= "list material-icons">sort</i>
+                        <input type="text" placeholder="Criar nova tarefa">
+                    </div>
+
+                    <div class="controls">
+                        <div class="filters">
+                          <span class="active" id="all">Todas</span>
+                          <span id="pending">Pendentes</span>
+                          <span id="completed">Concluídas</span>
+                        </div>
+                        <button class="clear-btn">Limpar tudo</button>
+                    </div>
+                      <ul class="task-box"></ul>
+                </section>
+
+                <section id="calendario">
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <span class="month-picker" id="month-picker"></span>
+                            <div class="year-picker">
+                                <span class="year-change" id="prev-year">
+                                    <pre>&lt;</pre>
+                                </span>
+                                <span id="year"></span>
+                                <span class="year-change" id="next-year">
+                                    <pre>&gt;</pre>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="calendar-body">
+                            <div class="calendar-week-day">
+                                <div>Dom</div>
+                                <div>Seg</div>
+                                <div>Ter</div>
+                                <div>Qua</div>
+                                <div>Qui</div>
+                                <div>Sex</div>
+                                <div>Sáb</div>
+                            </div>
+                            <div class="calendar-days"></div>
+                        </div>
+
+                        <div class="month-list"></div>
+                    </div>
+                </section>
+
+                <section id="calculadora">
+                    <div class="display">
+                        <input type="text" placeholder="0" id="input" disabled />
+                    </div>
+                      <div class="buttons">
+                        <!-- Full Erase -->
+                        <input type="button" value="AC" id="clear" />
+                        <!-- Erase Single Value -->
+                        <input type="button" value="DEL" id="erase" />
+                        <input type="button" value="/" class="input-button" />
+                        <input type="button" value="*" class="input-button" />
+                        <input type="button" value="7" class="input-button" />
+                        <input type="button" value="8" class="input-button" />
+                        <input type="button" value="9" class="input-button" />
+                        <input type="button" value="-" class="input-button" />
+                        <input type="button" value="6" class="input-button" />
+                        <input type="button" value="5" class="input-button" />
+                        <input type="button" value="4" class="input-button" />
+                        <input type="button" value="+" class="input-button" />
+                        <input type="button" value="1" class="input-button" />
+                        <input type="button" value="2" class="input-button" />
+                        <input type="button" value="3" class="input-button" />
+                        <input type="button" value="=" id="equal" />
+                        <input type="button" value="0" class="input-button" />
+                        <input type="button" value="." class="input-button" />
+                      </div>
+                </section>
+
+                <section id="jogos">
+                  
+                        <div class="jogo-da-velha">
+                            <div class="wrapper">
+                                <h1>Jogo da velha</h1>
+                                <div class="container-jogo-velha">
+                                    <button class="button-option"></button>
+                                    <button class="button-option"></button>
+                                    <button class="button-option"></button>
+                                    <button class="button-option"></button>
+                                    <button class="button-option"></button>
+                                    <button class="button-option"></button>
+                                    <button class="button-option"></button>
+                                    <button class="button-option"></button>
+                                    <button class="button-option"></button>
+                                </div>
+                                <button id="restart">Reiniciar</button>
+                            </div>
+
+                            <div class="popup hide">
+                                <p id="message">Msg modelo</p>
+                                <button id="new-game">Novo jogo</button>
+                            </div>
+                        </div>
+
+                        <div class="jogo-memoria">
+                            <div class="wrapper-memoria">
+                                <h1>Jogo da memória</h1>
+
+                                <ul class="cards">
+                                  <li class="card">
+                                    <div class="view front-view">
+                                      <img src="imgs/verso.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                      <img src="imgs/coelho-1.png" alt="card-img">
+                                    </div>
+                                  </li>
+                                  <li class="card">
+                                    <div class="view front-view">
+                                        <img src="imgs/verso.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img src="imgs/coelho-2.png" alt="card-img">
+                                    </div>
+                                  </li>
+                                  <li class="card">
+                                    <div class="view front-view">
+                                        <img src="imgs/verso.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img src="imgs/coelho-3.png" alt="card-img">
+                                    </div>
+                                  </li>
+                                  <li class="card">
+                                    <div class="view front-view">
+                                        <img src="imgs/verso.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img src="imgs/coelho-4.png" alt="card-img">
+                                    </div>
+                                  </li>
+                                  <li class="card">
+                                    <div class="view front-view">
+                                        <img src="imgs/verso.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img src="imgs/coelho-5.png" alt="card-img">
+                                    </div>
+                                  </li>
+                                  <li class="card">
+                                    <div class="view front-view">
+                                        <img src="imgs/verso.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img src="imgs/coelho-6.png" alt="card-img">
+                                    </div>
+                                  </li>
+                                  <li class="card">
+                                    <div class="view front-view">
+                                        <img src="imgs/verso.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img src="imgs/coelho-1.png" alt="card-img">
+                                    </div>
+                                  </li>
+                                  <li class="card">
+                                    <div class="view front-view">
+                                        <img src="imgs/verso.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img src="imgs/coelho-2.png" alt="card-img">
+                                    </div>
+                                  </li>
+                                  <li class="card">
+                                    <div class="view front-view">
+                                        <img src="imgs/verso.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img src="imgs/coelho-3.png" alt="card-img">
+                                    </div>
+                                  </li>
+                                  <li class="card">
+                                    <div class="view front-view">
+                                        <img src="imgs/verso.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img src="imgs/coelho-4.png" alt="card-img">
+                                    </div>
+                                  </li>
+                                  <li class="card">
+                                    <div class="view front-view">
+                                        <img src="imgs/verso.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img src="imgs/coelho-5.png" alt="card-img">
+                                    </div>
+                                  </li>
+                                  <li class="card">
+                                    <div class="view front-view">
+                                        <img src="imgs/verso.png" alt="icon">
+                                    </div>
+                                    <div class="view back-view">
+                                        <img src="imgs/coelho-6.png" alt="card-img">
+                                    </div>
+                                  </li>
+                                </ul>
+                            </div>
+                          
+                        </div>                        
+                </section>
+
+                <section id="galeria">
+                    <div class="lightBox">
+                        <div class="lightBox_content">
+                            <ion-icon name="close-outline" class="close"></ion-icon>
+                          <div class="showImg">
+                            <div class="image">
+                              <img src="" alt="">
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  
+                      <div class="image-gallery">
+                        <header>Projetos para praticar HTML, CSS e JS</header>
+                        <div class="image-container">
+                          <div class="image-box">
+                            <img class="gImg" src="imgs/projetos/bolsas.png" alt="">
+                          </div>
+                          <div class="image-box">
+                            <img class="gImg" src="imgs/projetos/cel.png" alt="">
+                          </div>
+                          <div class="image-box">
+                            <img class="gImg" src="imgs/projetos/gerador-senha.png" alt="">
+                          </div>
+                          <div class="image-box">
+                            <img class="gImg" src="imgs/projetos/jogo-da-memoria.png" alt="">
+                          </div>
+                          <div class="image-box">
+                            <img class="gImg" src="imgs/projetos/psicocine.png" alt="">
+                          </div>
+                          <div class="image-box">
+                            <img class="gImg" src="imgs/projetos/temporizador.png" alt="">
+                          </div>
+                          <div class="image-box">
+                            <img class="gImg" src="imgs/projetos/wpp.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                </section>
+            </section>
+        </main>
+        
+        <div class="campo-relogio">
+            <div class="btns">
+                <div class="casa">
+                    <i class="material-icons">home</i>
+                </div>
+                <div class="claro-escuro">
+                    <i class="material-icons">dark_mode</i><!--<i class="material-icons">light_mode</i-->
+                </div>
+            </div>
+
+            <img src="imgs/balao1.png" alt="balao de coelho flutuando" class="balaoimg">
+            <img src="imgs/minicoelho1.png" alt="" class="minicoelho">
+
+            <div class="coelho-md">
+                <img src="imgs/coelholight.png" alt="">
+            </div>
+
+           <div class="relogio">
+                <span class="hms"></span>
+                <span class="ampm"></span>
+                <br>
+                <span class="data"></span>
+           </div>
+        </div>
+    </div>
+
+    <script src="scriptinho.js"></script>
+    <script src="playlist.js"></script>
+    <script src="musica.js"></script>
+    <script src="alarme.js"></script>
+    <script src="todo.js"></script>
+    <script src="calendario.js"></script>
+    <script src="calculadora.js"></script>
+    <script src="galeria.js"></script>
+    <script src="jogos.js"></script>
+    
+</body>
+</html>
